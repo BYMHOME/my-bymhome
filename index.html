@@ -40,35 +40,7 @@
     .yandex:hover { background: #ffdb4d; color: #000; }
 
     footer { padding: 40px 20px; background-color: #f1f1f1; text-align: center; font-size: 14px; }
-      .banner-overlay {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
-}
-.banner-overlay img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
-.banner-overlay::after {
-  content: '';
-  position: absolute;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  background: rgba(0, 0, 0, 0.4);
-}
-.banner-text {
-  position: absolute;
-  top: 50%; left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  font-size: 64px;
-  font-weight: 900;
-  z-index: 2;
-  text-align: center;
-}
+      
     .banner-overlay img {
       height: auto;
       aspect-ratio: unset;
@@ -94,10 +66,7 @@
   </nav>
 
   <header>
-  <div class="banner-overlay">
-    <img src="https://raw.githubusercontent.com/BYMHOME/my-bymhome/main/images/banner.jpg" alt="BYM HOME Главная баннер" />
-    <div class="banner-text">BYM HOME</div>
-  </div>
+  <img src="https://raw.githubusercontent.com/BYMHOME/my-bymhome/main/images/banner.jpg" alt="BYM HOME Главная баннер" />
 </header>
 
 
@@ -158,4 +127,3 @@
   </footer>
 </body>
 </html>
-
