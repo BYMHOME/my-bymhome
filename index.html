@@ -41,9 +41,18 @@
 
     footer { padding: 40px 20px; background-color: #f1f1f1; text-align: center; font-size: 14px; }
       .banner-overlay { position: relative; width: 100%; height: 100vh; overflow: hidden; }
-    .banner-overlay img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .banner-overlay img { width: 100%; height: auto; object-fit: cover; display: block; aspect-ratio: 3 / 4; max-height: 100vh; }
     .banner-overlay::after { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.4); }
     .banner-text { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: white; font-size: 64px; font-weight: 900; z-index: 2; text-align: center; }
+  @media (max-width: 768px) {
+    .banner-overlay {
+      height: auto;
+    }
+    .banner-overlay img {
+      height: auto;
+      aspect-ratio: unset;
+    }
+  }
 </style>
 </head>
 <body>
@@ -64,56 +73,7 @@
   </div>
 </header>
 
-<section id="catalog">
-  <div class="gallery">
-    <a href="#" class="gallery-item"><img src="https://via.placeholder.com/300x400?text=Item+1" alt="Галерея 1" /><div class="overlay">Перейти в каталог</div></a>
-    <a href="#" class="gallery-item"><img src="https://via.placeholder.com/300x400?text=Item+2" alt="Галерея 2" /><div class="overlay">Перейти в каталог</div></a>
-    <a href="#" class="gallery-item"><img src="https://via.placeholder.com/300x400?text=Item+3" alt="Галерея 3" /><div class="overlay">Перейти в каталог</div></a>
-  </div>
-</section>
 
-<section>
-  <div class="text-block">
-    <p>BYM HOME — это тканевые шторы для ванной, которые сочетают эстетику, долговечность и комфорт. Каждая штора создается вручную с заботой о деталях.</p>
-  </div>
-  <img class="full-image" src="https://via.placeholder.com/1200x800?text=Text+Block+Image" alt="Инфо блок изображение" />
-</section>
-
-<section>
-  <div class="gallery">
-    <a href="#" class="gallery-item"><img src="https://via.placeholder.com/300x400?text=Item+4" alt="Галерея 4" /><div class="overlay">Перейти в каталог</div></a>
-    <a href="#" class="gallery-item"><img src="https://via.placeholder.com/300x400?text=Item+5" alt="Галерея 5" /><div class="overlay">Перейти в каталог</div></a>
-  </div>
-</section>
-
-<section>
-  <img class="full-image" src="https://via.placeholder.com/1200x800?text=Final+Banner" alt="Финальное изображение" />
-</section>
-
-<section id="buy">
-  <div class="text-block">
-    <h2>Где купить?</h2>
-    <div class="buy-buttons">
-      <a href="https://www.ozon.ru/category/shtory-i-karnizy-dlya-vannoy-15015/bym-home-101109354/" class="ozon" target="_blank">OZON</a>
-      <a href="https://www.wildberries.ru/brands/11144210-bym-home" class="wildberries" target="_blank">WILDBERRIES</a>
-      <a href="https://market.yandex.ru/search?text=BYM%20HOME" class="yandex" target="_blank">Яндекс Маркет</a>
-    </div>
-  </div>
-</section>
-
-<section id="about">
-  <div class="text-block">
-    <h2>О компании</h2>
-    <p>BYM HOME — российский бренд, специализирующийся на текстиле для ванных комнат. Мы создаём стильные и функциональные решения, уделяя внимание качеству, экологичности и современному дизайну.</p>
-  </div>
-</section>
-
-<section id="contacts">
-  <div class="text-block">
-    <h2>Контакты</h2>
-    <p>Email: contact@bymhome.ru<br>Телефон: +7 (999) 123-45-67<br>Instagram: @bymhome</p>
-  </div>
-</section>
 
   <section id="catalog">
     <div class="gallery">
